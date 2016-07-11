@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    each post in posts
+        article
+            p #{post.title}
+            p #{post.author}
+            p #{post.body}
+            p #{post.date}
+        hr        
+    

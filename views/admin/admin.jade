@@ -1,0 +1,12 @@
+extends ../layout
+
+block content
+    a(href="/admin/add_post") Add post
+    each post in posts
+        article
+            p #{post.title}
+            p #{post.author}
+            p #{post.body}
+            p #{post.date}
+        hr        
+    
